@@ -1,0 +1,187 @@
+/* Životopis + motivačný list */
+
+body {
+    font-family: 'Muli', sans-serif;
+}
+
+h1, h2, p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h1 {
+    margin-bottom: 30px;
+    /*font-size: 2.5em;*/
+}
+
+h2 {
+    /*font-size: 1.8em;*/
+}
+
+i {
+    padding-right: 10px;
+}
+
+p {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    /*font-size: 1.2em;*/
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+ul {
+    padding-left: 60px;
+}
+
+li {
+    /*font-size: 1.2em;*/
+}
+
+div.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul.skills li {
+    margin-bottom: 0.3em;
+}
+
+.main-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section-header {
+    padding-bottom: 15px;
+    border-bottom: 3px solid black;
+}
+
+h2.section-header.header-without-image + img {
+    display: none !important;
+}
+
+h2.section-header.header-without-image {
+    display: inline-block;
+    width: 960px;
+}
+
+h2.section-header.header-with-image {
+    display: inline-block;
+    width: 60%;
+}
+
+.work-section {
+    margin-bottom: 35px;
+}
+
+.paragraph-header {
+    font-weight: 700;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.col-4 {
+    width: 33.3%;
+}
+
+.col-4 ul {
+    padding-left: 38px;
+}
+
+.beginner:after, .intermediate:after, .advanced:after, .expert:after {
+    float: right;
+    padding: 0 0.4em 0.2em 0.4em;
+    font-size: 0.85em;
+    border-radius: 4px;
+    color: white;
+}
+
+.beginner:after {
+    content: 'Začiatočník';
+    /*Maya blue*/
+    background-color: #89CFF0;
+}
+
+.intermediate:after {
+    content: 'Stredne pokročilý';
+    background-color: #73C2FB;
+}
+
+.advanced:after {
+    content: 'Pokročilý';
+    background-color: #4682B4;
+}
+
+.expert:after {
+    content: 'Expert';
+    /*Egyptian blue*/
+    background-color: #1034A6;
+}
+
+@media print {
+    .skills li {
+        font-size: 1em;
+    }
+
+    .work-section {
+        page-break-inside: avoid;
+    }
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.header-with-image {
+    display: inline-block;
+    width: 60%;
+}
+
+img {
+    display: inline-block;
+    height: 300px;
+    position: absolute;
+    right: 0;
+    top: -40px;
+}
+
+/* Motivačný list exclusive */
+
+.motivation-list p {
+    line-height: 1.8em;
+}
+
+.motivacny-header {
+    text-align: center;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.address {
+    font-weight: 700;
+}
+
+.date {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+p.align-right:last-child {
+    padding-right: 80px;
+    margin-top: 20px;
+}
