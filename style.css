@@ -102,18 +102,18 @@ h2.section-header.header-with-image {
 }
 
 .beginner:after {
-    content: 'Začiatočník';
+    content: 'Beginner';
     /*Maya blue*/
     background-color: #89CFF0;
 }
 
 .intermediate:after {
-    content: 'Stredne pokročilý';
+    content: 'Intermediate';
     background-color: #73C2FB;
 }
 
 .advanced:after {
-    content: 'Pokročilý';
+    content: 'Advanced';
     background-color: #4682B4;
 }
 
