@@ -59,10 +59,6 @@ ul.skills li {
     border-bottom: 3px solid black;
 }
 
-h2.section-header.header-without-image + img {
-    display: none !important;
-}
-
 h2.section-header.header-without-image {
     display: inline-block;
     width: 960px;
