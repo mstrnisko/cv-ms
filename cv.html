@@ -72,9 +72,15 @@
               achieve fast delivery, and discover any potential bottlenecks.
             </li>
             <li>
+              Created from scratch custom Terraform config for infrastructure on AWS. This config
+              ensured us easy deployment of new environments for various testing, e.g. staging, or
+              testing for other countries when expanding.
+            </li>
+            <li>
               Designed and developed implementation of the Stripe payment system with subscriptions,
               and one-time payments.
             </li>
+            <li>Implemented from scratch CI/CD pipeline with Jest integration tests</li>
             <li>
               I was always proactively informing anyone involved, whether it's client/stakeholders
               or project manager about project status, be it technical implementation, product
@@ -92,16 +98,17 @@
               <span class="italic">Notable technologies used:</span>
               <ul class="weight-700">
                 <li>Terraform(IaaC deployment on AWS)</li>
+                <li>Stripe</li>
                 <li>Next.js(React)</li>
                 <li>Node.js</li>
+                <li>Typescript</li>
                 <li>GraphQL</li>
-                <li>Stripe</li>
               </ul>
             </li>
             <li>
               <span class="italic">Other technologies used:</span>
               <b
-                >Apollo Server/Client, Chakra UI, Objection.js(Knex.js - SQL builder for JS)
+                >Jest, Apollo Server/Client, Chakra UI, Objection.js(Knex.js - SQL builder for JS)
                 Firebase Auth, Sentry(logging+monitoring)</b
               >
             </li>
@@ -109,11 +116,59 @@
           <p>Project Name: <span class="italic">Geam - gExperts</span></p>
           <p>
             <span class="italic"
-              >4/2022 - 1/2023, Fullstack dev. & Technical lead (Next.js + Node.js)</span
+              >4/2022 - 3/2023, Fullstack dev. & Technical lead (Next.js + Node.js)</span
             >
           </p>
           <ul>
-            <li>???</li>
+            <li>
+              Led the development of a web app that helps insurance companies assess risks of
+              certain addresses from being insured
+            </li>
+            <li>Managed a squad of 3 engineers while being the main developer of the project</li>
+            <li>
+              Always informed relevant people about the status of current sprint, roadmap, and of
+              relevant blockers
+            </li>
+            <li>
+              Designed and developed complex table view with various functions, like merging
+              rows(addresses) or editing certain properties of the address
+            </li>
+            <li>
+              Helped with the development of Google Maps view, where various functionalities were
+              added, like measurement tools(distance, elevation, etc.), drawing tools(polygons,
+              circles, rectangles, etc.)
+            </li>
+            <li>
+              Fetch external graphical layers to show over the Google ap if the area is risky to
+              insure. These layers were implemented with deck.gl, which uses OpenGL rendering for
+              performance enhancements.
+            </li>
+            <li>
+              Work with WMS layers, which take into account the current map zoom level, tile size,
+              and camera position. All of these and other variables were taken into consideration,
+              and upon camera or zoom change, fire GET request for WMS layer.
+            </li>
+            <li>
+              Work with BigQuery database, where tunneling connection was used, to figure out
+              whether the requested layer is a tileset or table.
+            </li>
+            <li>Work with CatNet API from Swiss Re to fetch risk classes of addresses</li>
+            <li>Work with GDACS and GeoJson to upload personal layers</li>
+            <li>
+              <span class="italic">Notable technologies used:</span>
+              <ul class="weight-700">
+                <li>Google Maps + API</li>
+                <li>deck.gl</li>
+                <li>Next.js(React)</li>
+                <li>Node.js</li>
+                <li>Typescript</li>
+                <li>GraphQL</li>
+              </ul>
+            </li>
+            <li>
+              <span class="italic">Other technologies used:</span>
+              <b>Apollo Server/Client, TanStack React Table, Sentry(logging+monitoring)</b>
+            </li>
           </ul>
           <p>Project Name: <span class="italic">Volteras.com</span></p>
           <p>
@@ -125,11 +180,41 @@
               the support of payments, navigations, long distance trip planning, and many more.
             </li>
             <li>
+              Tasked with development of whole BE infrastructure that handled communication for
+              electric vehicles via OCPI protocol with electric chargers across the globe with the
+              mobile app
+            </li>
+            <li>
+              Researched & implemented all the modules of the OCPI protocol. With this protocol, I
+              was able to remotely start the charging session, check the battery percentage, force
+              various commands to the vehicle, or check the payment status of the charging session.
+            </li>
+            <li>
+              Implemented WMS tiles in the mobile app part to correctly overlay the charging
+              stations over the Google Maps
+            </li>
+            <li>
+              Developed and helped with various UI features in mobile part of the app, e.g. carousel
+              slider, registration flow.
+            </li>
+            <li>Helped with the development of the payment platform Adyen.</li>
+            <li>
+              <span class="italic">Notable technologies used:</span>
+              <ul class="weight-700">
+                <li>React Native</li>
+                <li>Adyen</li>
+                <li>OCPI(Open Charge Point Interface) protocol</li>
+                <li>Node.js</li>
+                <li>Typescript</li>
+                <li>GraphQL</li>
+              </ul>
+            </li>
+            <li>
               <span class="italic">Technologies used:</span>
               <b
-                >React Native, ReactJS, Apollo Server/Client, OCPI protocol, Styled Components +
-                Chakra UI, GraphQL, NodeJS, Objection.js(Knex.js - SQL builder for JS), Firebase
-                Auth, WMS tiles, AWS(deployment), Eco-Movement API, Sentry</b
+                >Apollo Server/Client, Express, Styled Components + Chakra UI, Objection.js(Knex.js
+                - SQL builder for JS), Firebase Auth, WMS tiles, AWS(deployment), Eco-Movement API,
+                Sentry</b
               >
             </li>
           </ul>
@@ -139,14 +224,35 @@
             <span class="italic">Fullstack dev. (Next.js + Node.js)</span>
           </p>
           <ul>
-            <li>Portal that offers 1on1 video consultations through video call</li>
+            <li>
+              Developed most of the frontend for portal that offers 1on1 video consultations through
+              video calls with world's top interior designers. The platform later evolved into a
+              comprehensive e-commerce site for premium home goods.
+            </li>
             <li>Featured in The New York Times, TechCrunch, Forbes, and many more</li>
+            <li>
+              Slowly moved to the backend part of the app to handle API and scheduling of
+              consultations via Zoom API
+            </li>
+            <li>Written up tests for E2E testing with Cypress</li>
+            <li>Written up tests for integration testing with Jest for API resolvers</li>
+            <li>
+              <span class="italic">Notable technologies used:</span>
+              <ul class="weight-700">
+                <li>Zoom API</li>
+                <li>Firebase simulator + auth</li>
+                <li>Cypress(E2E tests)</li>
+                <li>Jest(integration tests)</li>
+                <li>Next.js(React)</li>
+                <li>Node.js</li>
+                <li>GraphQL</li>
+              </ul>
+            </li>
             <li>
               <span class="italic">Technologies used:</span>
               <b
-                >ReactJS, Apollo Server/Client, Next.js, GraphQL, Styled Components, NodeJS,
-                Objection.js(Knex.js - SQL builder for JS), Firebase Auth(simulator), Zoom API,
-                Cypress(E2E tests), Jest(integration tests), Sentry</b
+                >Apollo Server/Client, Styled Components, Objection.js(Knex.js - SQL builder for
+                JS), Sentry</b
               >
             </li>
           </ul>
@@ -160,14 +266,26 @@
             <span class="weight-600">5/2018 - 5/2020</span> (2 years),
             <span class="italic">Junior/Medior Fullstack dev.</span>
           </p>
-          <!-- TODO: doplnit eforms, chitbar, a neviem co este          -->
           <ul>
             <li>Primary work as a front-end developer</li>
-            <li>Numerous front-end projects based on ReactJS, Angular 2+, PHP, jQuery</li>
+            <li>
+              Various front-end projects based on ReactJS, Angular 2+, PHP, jQuery, which were
+              mostly focused on presentation pages for companies
+            </li>
             <li>Development of custom templates for Wordpress</li>
             <li>
+              Developed & maintained various features for foresteurope.org, digitalnakoalicia.sk,
+              via WordPress
+            </li>
+            <li>
+              Developed E-forms portal for Ministry of Agriculture and Rural Development of the
+              Slovak Republic. Helped with the development of a Domain-Specific Language (DSL) for
+              form structure generation, enabling developers and administrators to rapidly iterate
+              and create new forms with efficiency and ease.
+            </li>
+            <li>
               <span class="italic">Technologies used:</span>
-              <b>Wordpress + Wordpress API, jQuery, ReactJS, Angular 2+, PHP, HTML, SCSS/CSS</b>
+              <b>Wordpress + Wordpress API, jQuery, ReactJS, Angular 2+, PHP, SCSS/CSS</b>
             </li>
           </ul>
         </div>
@@ -193,7 +311,7 @@
             </li>
             <li>
               <span class="italic">Technologies used:</span>
-              <b>Wordpress API, jQuery, PHP, HTML, SCSS</b>
+              <b>Wordpress API, jQuery, PHP, SCSS</b>
             </li>
           </ul>
           <p>Project Name: <span class="italic">gogoshop.sk + ohmydog.sk</span></p>
@@ -214,7 +332,7 @@
             </li>
             <li>
               <span class="italic">Technologies used:</span>
-              <b>Wordpress + Woocommerce API, PHP, jQuery, CSS, HTML</b>
+              <b>Wordpress + Woocommerce API, PHP, jQuery, SCSS</b>
             </li>
           </ul>
         </div>
@@ -234,7 +352,7 @@
             <li>Used ReactJS as a FE framework with the help of a Context API</li>
             <li>
               <span class="italic">Technologies used:</span>
-              <b>ReactJS, HTML, SCSS</b>
+              <b>ReactJS, SCSS</b>
             </li>
           </ul>
         </div>
@@ -258,7 +376,7 @@
             </li>
             <li>
               <span class="italic">Technologies used:</span>
-              <b>NodeJS, Express, Facebook Messenger API</b>
+              <b>Facebook Messenger API, Node.js(Express), Typescript</b>
             </li>
           </ul>
         </div>
@@ -318,7 +436,7 @@
             <ul class="skills">
               <li class="advanced">Google Maps API</li>
               <li class="advanced">AWS(deployment)</li>
-              <li class="expert">Arduino</li>
+              <li class="advanced">Arduino</li>
               <li class="expert">Git</li>
               <li class="expert">Linux</li>
               <li class="intermediate">WMS tiles</li>
