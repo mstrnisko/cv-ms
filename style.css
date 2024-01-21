@@ -69,11 +69,38 @@ h2.section-header.header-with-image {
     width: 60%;
 }
 
-.work-section {
+.work-section:not(:last-child) {
     margin-bottom: 35px;
 }
 
+.work-section:not(:first-child) {
+    margin-top: 35px;
+}
+
+.work-section {
+    border-left: 2px solid black;
+}
+
+.work-section-divider {
+    border-top: 1px solid #c5c5c5;
+    height: 1px;
+    width: 80%;
+    margin: 0 auto;
+}
+
 .paragraph-header {
+    font-weight: 700;
+}
+
+.company-title {
+    font-size: 1.4em;
+}
+
+.weight-600 {
+    font-weight: 600;
+}
+
+.weight-700 {
     font-weight: 700;
 }
 

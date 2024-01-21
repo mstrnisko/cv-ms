@@ -30,12 +30,13 @@
   </head>
   <body>
     <div class="main-wrapper">
-      <section style="position: relative">
+      <!--SECTION:PERSONAL INFORMATION-->
+      <section>
         <h2 class="section-header header-without-image">
           <i class="fas fa-user-alt"></i> Personal information
         </h2>
         <p><span class="paragraph-header">Full name:</span> Matej Strnisko</p>
-        <p><span class="paragraph-header">Age:</span> 22</p>
+        <p><span class="paragraph-header">Age:</span> 24</p>
         <p><span class="paragraph-header">Nationality:</span> Slovak</p>
         <p>
           <span class="paragraph-header">E-mail:</span>
@@ -43,62 +44,80 @@
         </p>
       </section>
 
-      <section>
-        <h2 class="section-header"><i class="fas fa-book"></i> Education</h2>
-        <p>
-          <span class="paragraph-header"
-            >Technical University of Košice, Faculty of Electrical Engineering and Informatics,
-            Košice</span
-          >: 2019 - present
-        </p>
-        <p><span class="paragraph-header">Field of study:</span> Informatics</p>
-        <br />
-
-        <p>
-          <span class="paragraph-header"
-            >Secondary School for Electrical Engineering (SPŠE), Košice</span
-          >: 2015 - 2019
-        </p>
-        <p><span class="paragraph-header">Field of study:</span> 3918 M Technické lýceum</p>
-        <p><span class="paragraph-header">Ended:</span> School leaving exam</p>
-        <br />
-      </section>
-
-      <section>
-        <h2 class="section-header"><i class="fas fa-globe-americas"></i> Language skills</h2>
-        <p><span class="paragraph-header">Slovak:</span> meternal</p>
-        <p><span class="paragraph-header">English:</span> actively verbally and in writing</p>
-        <p><span class="paragraph-header">German:</span> basics</p>
-        <p><span class="paragraph-header">Russian:</span> basics</p>
-        <p><span class="paragraph-header">Japanese:</span> basics</p>
-      </section>
-
+      <!--SECTION:WORK EXPERIENCE-->
       <section>
         <h2 class="section-header"><i class="fas fa-briefcase"></i> Work experience</h2>
 
         <div class="work-section">
-          <p><span class="paragraph-header">sudolabs.io</span></p>
-          <p><span class="italic">7-2020 - present, Fullstack dev.</span></p>
-          <br />
-          <p>Project Name: <span class="italic">TheExpert.com</span></p>
+          <p class="paragraph-header company-title">sudolabs.com</p>
           <p>
-            <span class="italic">7-2020 - 2-2021, Fullstack dev.</span>
+            <span class="weight-600">7/2020 - 1/2024</span> (3 years 7 months),
+            <span class="italic">Senior Fullstack dev. - Technical lead</span>
+          </p>
+          <br />
+          <p>Project Name: <span class="italic">EzTenda.com</span></p>
+          <p>
+            <span class="italic"
+              >8/2021 - 1/2024, Fullstack dev. & Technical lead (Next.js + Node.js)</span
+            >
           </p>
           <ul>
-            <li>Portal that offers 1on1 video consultations through video call</li>
-            <li>Featured in The New York Times, TechCrunch, Forbes, and many more</li>
             <li>
-              <span class="italic">Technologies used:</span>
+              Led the development of a web app that provides marketplace platform to help negotiate
+              listings between drinks brands and hospitality venues
+            </li>
+            <li>Managed a squad of maximum 4 engineers</li>
+            <li>
+              Closely worked in collaboration with the product manager and client so that we would
+              achieve fast delivery, and discover any potential bottlenecks.
+            </li>
+            <li>
+              Designed and developed implementation of the Stripe payment system with subscriptions,
+              and one-time payments.
+            </li>
+            <li>
+              I was always proactively informing anyone involved, whether it's client/stakeholders
+              or project manager about project status, be it technical implementation, product
+              roadmap, or anything else.
+            </li>
+            <li>
+              Led the scrum ceremonies and was responsible for high-level estimations, and detailed
+              descriptions of features that were split into epics or smaller, more detailed tasks
+            </li>
+            <li>
+              Closely mentored junior/medior developers through extensive code reviews, pair
+              programming sessions, or improving their work habits.
+            </li>
+            <li>
+              <span class="italic">Notable technologies used:</span>
+              <ul class="weight-700">
+                <li>Terraform(IaaC deployment on AWS)</li>
+                <li>Next.js(React)</li>
+                <li>Node.js</li>
+                <li>GraphQL</li>
+                <li>Stripe</li>
+              </ul>
+            </li>
+            <li>
+              <span class="italic">Other technologies used:</span>
               <b
-                >ReactJS, Apollo Server/Client, Next.js, GraphQL, Styled Components, NodeJS,
-                Objection.js(Knex.js - SQL builder for JS), Firebase Auth(simulator), Zoom API,
-                Cypress(E2E tests), Jest(integration tests), Sentry</b
+                >Apollo Server/Client, Chakra UI, Objection.js(Knex.js - SQL builder for JS)
+                Firebase Auth, Sentry(logging+monitoring)</b
               >
             </li>
           </ul>
-          <p>Project Name: <span class="italic">Jooptr.com</span></p>
+          <p>Project Name: <span class="italic">Geam - gExperts</span></p>
           <p>
-            <span class="italic">2-2021 - 8-2021, Fullstack dev.</span>
+            <span class="italic"
+              >4/2022 - 1/2023, Fullstack dev. & Technical lead (Next.js + Node.js)</span
+            >
+          </p>
+          <ul>
+            <li>???</li>
+          </ul>
+          <p>Project Name: <span class="italic">Volteras.com</span></p>
+          <p>
+            <span class="italic">2/2021 - 8/2021, Fullstack dev. (React Native + Node.js)</span>
           </p>
           <ul>
             <li>
@@ -114,31 +133,34 @@
               >
             </li>
           </ul>
-          <p>Project Name: <span class="italic">EzTenda.com</span></p>
+          <p>Project Name: <span class="italic">TheExpert.com</span></p>
           <p>
-            <span class="italic">8-2021 - present, Fullstack dev.</span>
+            7/2020 - 2/2021,
+            <span class="italic">Fullstack dev. (Next.js + Node.js)</span>
           </p>
           <ul>
-            <li>
-              Web app that provides marketplace where listing deals are tendered as a service for
-              hospitality venues and brand drinks.
-            </li>
+            <li>Portal that offers 1on1 video consultations through video call</li>
+            <li>Featured in The New York Times, TechCrunch, Forbes, and many more</li>
             <li>
               <span class="italic">Technologies used:</span>
               <b
-                >ReactJS, Apollo Server/Client, Next.js, GraphQL, Chakra UI, NodeJS,
-                Objection.js(Knex.js - SQL builder for JS), Terraform(IaC deployment on AWS),
-                Firebase Auth, Sentry</b
+                >ReactJS, Apollo Server/Client, Next.js, GraphQL, Styled Components, NodeJS,
+                Objection.js(Knex.js - SQL builder for JS), Firebase Auth(simulator), Zoom API,
+                Cypress(E2E tests), Jest(integration tests), Sentry</b
               >
             </li>
           </ul>
         </div>
 
+        <div class="work-section-divider"></div>
+
         <div class="work-section">
-          <p><span class="paragraph-header">localhost.company</span></p>
+          <p class="paragraph-header company-title">localhost.company</p>
           <p>
-            <span class="italic"> 5-2018 - 5-2020, Front-end dev.</span>
+            <span class="weight-600">5/2018 - 5/2020</span> (2 years),
+            <span class="italic">Junior/Medior Fullstack dev.</span>
           </p>
+          <!-- TODO: doplnit eforms, chitbar, a neviem co este          -->
           <ul>
             <li>Primary work as a front-end developer</li>
             <li>Numerous front-end projects based on ReactJS, Angular 2+, PHP, jQuery</li>
@@ -150,19 +172,23 @@
           </ul>
         </div>
 
+        <div class="work-section-divider"></div>
+
         <div class="work-section">
-          <p><span class="paragraph-header">Narative.sk</span></p>
+          <p class="paragraph-header company-title">Narative.sk</p>
           <p>Project Name: <span class="italic">KtoJeTo.sk</span></p>
           <p>
-            <span class="italic">7-2019 - 8-2019, Freelance, Fullstack dev.</span>
+            <span class="italic"
+              >7/2019 - 8/2019, Freelance, Fullstack dev. (WordPress API + php)</span
+            >
           </p>
           <ul>
             <li>
-              BE + FE development for custom template on Wordpress for portal of famous
+              BE + FE development for custom template on WordPress for portal of famous
               personalities
             </li>
             <li>
-              Used Wordpress API, created custom template and custom plugins for administration of
+              Used WordPress API, created custom template and custom plugins for administration of
               personalities and advertisements
             </li>
             <li>
@@ -172,12 +198,14 @@
           </ul>
           <p>Project Name: <span class="italic">gogoshop.sk + ohmydog.sk</span></p>
           <p>
-            <span class="italic">12-2019 - 3-2020, Freelance, Fullstack dev.</span>
+            <span class="italic"
+              >12/2019 - 3/2020, Freelance, Fullstack dev. (WordPress API + php)</span
+            >
           </p>
           <ul>
             <li>BE + FE development for custom template on Woocommerce for Wordpress</li>
-            <li>Used Wordpress and Woocommerce API for products from eshop.</li>
-            <li>Creation of custom Wordpress template</li>
+            <li>Used WordPress and Woocommerce API for products from eshop.</li>
+            <li>Creation of custom WordPress template</li>
             <li>Multi-currency eshop based on Woocommerce(CZK+EUR)</li>
             <li>Generation of custom design of PDF invoices</li>
             <li>
@@ -191,15 +219,17 @@
           </ul>
         </div>
 
+        <div class="work-section-divider"></div>
+
         <div class="work-section">
-          <p><span class="paragraph-header">Webinson, s.r.o.</span></p>
+          <p class="paragraph-header company-title">Webinson, s.r.o.</p>
           <p>Project Name: <span class="italic">Featherclick</span></p>
           <p>
-            <span class="italic">9-2019 - 11-2019, Freelance, Front-end</span>
+            <span class="italic">9/2019 - 11/2019, Freelance, Front-end</span>
           </p>
           <ul>
             <li>
-              Work as a FE developer on UI for web app that provides micro-transaction payments
+              Work as a FE developer on UI for web app that provides microtransaction payments
             </li>
             <li>Used ReactJS as a FE framework with the help of a Context API</li>
             <li>
@@ -209,10 +239,12 @@
           </ul>
         </div>
 
+        <div class="work-section-divider"></div>
+
         <div class="work-section">
-          <p><span class="paragraph-header">Own project</span></p>
+          <p class="paragraph-header company-title">Own project</p>
           <p>Project Name: <span class="italic">Suplovanie SPŠEKE</span></p>
-          <p><span class="italic">1-2019 - 3-2019, Back-end</span></p>
+          <p><span class="italic">Back-end</span></p>
           <ul>
             <li>Work as a BE developer on NodeJS</li>
             <li>
@@ -232,44 +264,51 @@
         </div>
       </section>
 
+      <!--SECTION:COMPUTER SKILLS-->
       <section>
         <h2 class="section-header" style="margin-bottom: 0">
           <i class="fas fa-code"></i> Computer skills
         </h2>
         <div class="row">
           <div class="col-4">
-            <h3 class="paragraph-header" style="padding-left: 20px">Front-end</h3>
+            <h3 class="paragraph-header" style="padding-left: 20px; margin-bottom: 0">Front-end</h3>
+            <p class="paragraph-header" style="padding-left: 20px">Languages/Frameworks</p>
             <ul class="skills">
-              <li class="expert">HTML5</li>
-              <li class="expert">CSS3</li>
-              <li class="expert">JS</li>
               <li class="expert">ReactJS</li>
               <li class="advanced">React Native</li>
-              <li class="beginner">Redux React</li>
-              <li class="advanced">Apollo Client</li>
-              <li class="expert">Firebase Auth.</li>
               <li class="advanced">Typescript</li>
               <li class="expert">Next.js</li>
-              <li class="expert">Styled components</li>
               <li class="advanced">jQuery</li>
               <li class="intermediate">Angular2+</li>
+            </ul>
+            <p class="paragraph-header" style="padding-left: 20px">Technologies</p>
+            <ul class="skills">
+              <li class="beginner">Redux React</li>
+              <li class="expert">Apollo Client</li>
+              <li class="expert">Firebase Auth.</li>
+              <li class="expert">Styled components</li>
               <li class="beginner">GatsbyJS</li>
             </ul>
           </div>
           <div class="col-4">
-            <h3 class="paragraph-header" style="padding-left: 20px">Back-end</h3>
+            <h3 class="paragraph-header" style="padding-left: 20px; margin-bottom: 0">Back-end</h3>
+            <p class="paragraph-header" style="padding-left: 20px">Languages/Frameworks</p>
             <ul class="skills">
               <li class="expert">NodeJS</li>
+              <li class="advanced">PHP</li>
+              <li class="advanced">SQL</li>
+              <li class="intermediate">C</li>
+              <li class="intermediate">Java</li>
+            </ul>
+            <p class="paragraph-header" style="padding-left: 20px">Technologies</p>
+            <ul class="skills">
+              <li class="advanced">Terraform(AWS)</li>
               <li class="expert">GraphQL</li>
               <li class="expert">Apollo Server</li>
               <li class="expert">Firebase Auth.</li>
-              <li class="advanced">PHP</li>
               <li class="expert">Wordpress API</li>
               <li class="expert">Woocommerce API</li>
-              <li class="advanced">SQL</li>
               <li class="beginner">Strapi</li>
-              <li class="intermediate">C</li>
-              <li class="intermediate">Java</li>
               <li class="advanced">OCPI protocol</li>
               <li class="advanced">Terraform(deployment)</li>
             </ul>
@@ -277,12 +316,13 @@
           <div class="col-4">
             <h3 class="paragraph-header" style="padding-left: 20px">Others</h3>
             <ul class="skills">
+              <li class="advanced">Google Maps API</li>
               <li class="advanced">AWS(deployment)</li>
               <li class="expert">Arduino</li>
               <li class="expert">Git</li>
               <li class="expert">Linux</li>
               <li class="intermediate">WMS tiles</li>
-              <li class="advanced">Sentry(logging)</li>
+              <li class="expert">Sentry(logging/monitoring)</li>
               <li class="beginner">Apache</li>
               <li class="beginner">Nginx</li>
               <li class="advanced">Adobe Photoshop</li>
@@ -291,6 +331,45 @@
             </ul>
           </div>
         </div>
+      </section>
+
+      <!--SECTION:EDUCATION-->
+      <section>
+        <h2 class="section-header"><i class="fas fa-book"></i> Education</h2>
+        <p>
+          <span class="paragraph-header"
+            >Technical University of Košice, Faculty of Electrical Engineering and Informatics,
+            Košice</span
+          >: 2019 - 2022
+        </p>
+        <p>
+          <span class="paragraph-header">Field of study:</span> Bachelor's degree, Information
+          Technology
+        </p>
+        <p><span class="paragraph-header">Ended:</span> Degree exam</p>
+        <br />
+
+        <p>
+          <span class="paragraph-header"
+            >Secondary School for Electrical Engineering (SPŠE), Košice</span
+          >: 2015 - 2019
+        </p>
+        <p>
+          <span class="paragraph-header">Field of study:</span> 3918 M Technické lýceum (Computer
+          Programming)
+        </p>
+        <p><span class="paragraph-header">Ended:</span> School leaving exam</p>
+        <br />
+      </section>
+
+      <!--SECTION:LANGUAGE SKILLS-->
+      <section>
+        <h2 class="section-header"><i class="fas fa-globe-americas"></i> Language skills</h2>
+        <p><span class="paragraph-header">Slovak:</span> meternal</p>
+        <p><span class="paragraph-header">English:</span> actively verbally and in writing</p>
+        <p><span class="paragraph-header">Japanese:</span> beginner</p>
+        <p><span class="paragraph-header">German:</span> basics</p>
+        <p><span class="paragraph-header">Russian:</span> basics</p>
       </section>
     </div>
   </body>
