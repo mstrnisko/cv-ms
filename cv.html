@@ -28,13 +28,43 @@
     />
     <title>CV - Matej Strnisko</title>
   </head>
-  <body>
+  <script>
+    const showDarkMode = () => {
+      const body = document.querySelector('body')
+      body.classList.remove('light-mode')
+      body.classList.add('dark-mode')
+    }
+
+    const showLightMode = () => {
+      const body = document.querySelector('body')
+      body.classList.remove('dark-mode')
+      body.classList.add('light-mode')
+    }
+
+    const onChangeModeClick = () => {
+      const isDarkMode = document.querySelector('.dark-mode')
+      if (isDarkMode) {
+        showLightMode()
+      } else {
+        showDarkMode()
+      }
+    }
+  </script>
+  <body class="light-mode">
     <div class="main-wrapper">
       <!--SECTION:PERSONAL INFORMATION-->
+      <div class="theme-swapper-container">
+        <div class="theme-swapper-wrapper" onclick="onChangeModeClick()">
+          <div class="theme-icon-wrapper">
+            <i class="light-elements fas fa-moon"></i>
+            <i class="dark-elements fas fa-sun"></i>
+          </div>
+          <div class="light-elements" style="padding-left: 5px">Click here for dark mode</div>
+          <div class="dark-elements" style="padding-left: 5px">Click here for light mode</div>
+        </div>
+      </div>
       <section>
-        <h2 class="section-header header-without-image">
-          <i class="fas fa-user-alt"></i> Personal information
-        </h2>
+        <h2 class="section-header"><i class="fas fa-user-alt"></i> Personal information</h2>
         <p><span class="paragraph-header">Full name:</span> Matej Strnisko</p>
         <p><span class="paragraph-header">Age:</span> 24</p>
         <p><span class="paragraph-header">Nationality:</span> Slovak</p>
@@ -490,5 +520,11 @@
         <p><span class="paragraph-header">Russian:</span> basics</p>
       </section>
     </div>
+    <script>
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        // is dark mode, show all dark stuff
+        showDarkMode()
+      }
+    </script>
   </body>
 </html>
